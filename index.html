@@ -2,34 +2,95 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GUcheez</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
-    <div class="header">
-        <div class="company">
-            <h1>GUcheez</h1>
-            <div class="menu list">
-                <li>coklat keju</li>
-                <li>pisang keju</li>
-                <li>nanas madu</li>
-                <li>pisang coklat</li>
-                <img src="GUcheez.jpg" alt="" width=500px>
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-                    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-                    crossorigin="anonymous" referrerpolicy="no-referrer" />
-            </div>
-            <footer>
-                Roti Bukan Bolu Bukan
-                Gucheez Nanas Madu adalah salah satu oleh-oleh khas guci. Hidangan ini menggabungkan
-                kelezatan nanas segar dengan madu alami, menciptakan perpaduan rasa manis dan asam yang unik dan
-                menggugah selera. Nanas yang digunakan dipilih dengan hati-hati untuk memastikan kualitas dan
-                kesegarannya, sementara madu memberikan sentuhan manis yang alami tanpa terlalu berlebihan.
-            </footer>
-            <a href="https://www.instagram.com/oleholehkhastegal?igsh=MXU3ajMweXZ0dWN6NA==" target="_blank"><i class="fa-brands fa-instagram"></i>Instagram</a>
+    <header class="header">
+        <h1>GUcheez</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Layanan</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>Tentang Kami</h2>
+        <img src="GUcheez.jpg" alt="kue skoyy" height="300px">
+        <p>Roti Bukan Bolu Bukan Gucheez Nanas Madu adalah salah satu oleh-oleh khas guci. Hidangan ini menggabungkan
+            kelezatan nanas segar dengan madu alami, menciptakan perpaduan rasa manis dan asam yang unik dan menggugah
+            selera. Nanas yang digunakan dipilih dengan memastikan kualitas dan kesegarannya, sementara madu memberikan
+            sentuhan manis yang alami tanpa terlalu berlebihan</p>
+    </section>
+    <section id="services">
+        <h2>Layanan Kami</h2>
+        <ul>
+            <li>
+                Catering: Kami menawarkan catering untuk acara-acara khusus.</li>
+            <li>Pengiriman: Kami menawarkan pengiriman makanan ke tempat Anda.</li>
+        </ul>
+        <table border="3" width="50%" height="50%">
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Deskripsi</th>
+                    <th>Harga</th>
+                </tr>
+            </thead>
+            <tbody align="center">
+                <tr>
+                    <td>Gucheez rasa pisang coklat</td>
+                    <td>perpaduan antara nanas madu dengan pisang ciklat yang lumer</td>
+                    <td>Rp 35.000</td>
+                </tr>
+                <tr>
+                    <td>Gucheez kombinasi 4 rasa</td>
+                    <td>perpaduan 4 rasa antara nanas madu, pisang coklat, pisang keju, coklat keju</td>
+                    <td>Rp 40.000</td>
+                </tr>
+                <tr>
+                    <td>Gucheez coklat keju</td>
+                    <td>perpaduan antara nanas madu dan lezatnya keju dan lumernya coklat</td>
+                    <td>Rp 35.000</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
+    <section id="contact">
+        <h3>Kontak Kami</h3>
+        <form action="">
+            <fieldset>
+                <label for="name">Nama</label>
+                <input type="text" id="name" value="Wisnu Maulana Akbar" required><br>
 
-</html>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Masukan Email" required><br>
+
+                <label for="message">Pesan</label>
+                <textarea id="message" cols="30" rows="5" placeholder="Masukan pesan"></textarea><br>
+
+                <button type="submit">Kirim</button>
+            </fieldset>
+        </form>
+
+        <footer>
+            <ul>
+                <li>Nama bisnis: GUchezz</li>
+                <li>Babakan, RT.4/RW.3, Babakan, Tuwel, Kec. Bojong, Kabupaten Tegal, Jawa Tengah 52465</li>
+            </ul>
+            <a href="https://www.instagram.com/oleholehkhastegal?igsh=MXU3ajMweXZ0dWN6NA==" target="_blank"><i
+                    class="fa-brands fa-instagram"></i> Instagram</a>
+        </footer>
+    </section>
+</body>
+
+</html> 
